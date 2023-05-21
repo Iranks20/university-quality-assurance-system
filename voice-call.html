@@ -24,29 +24,6 @@
 <link rel="stylesheet" href="assets/css/line-awesome.min.css">
 
 <link rel="stylesheet" href="assets/css/style.css">
-<script>
-    fetch('navbar.html')
-      .then(response => response.text())
-      .then(data => {
-        const navbarContainer = document.getElementById('navbarContainer');
-        navbarContainer.innerHTML = data;
-        initializeDropdowns();
-      })
-      .catch(error => console.error(error));
-  
-    function initializeDropdowns() {
-      const submenuItems = document.querySelectorAll('.submenu');
-      submenuItems.forEach(item => {
-        const submenuToggle = item.querySelector('a');
-        const submenuList = item.querySelector('ul');
-  
-        submenuToggle.addEventListener('click', function (e) {
-          e.preventDefault();
-          submenuList.style.display = submenuList.style.display === 'none' ? 'block' : 'none';
-        });
-      });
-    }
-  </script>
    
 </head>
 <body>
@@ -329,8 +306,8 @@
 
 </div>
 
-
-<div class="sidebar" id="sidebar">
+<div id="navbarContainer"></div>
+<!-- <div class="sidebar" id="sidebar">
 <div class="sidebar-inner slimscroll">
 <div id="sidebar-menu" class="sidebar-menu">
 <nav class='greedy'>
@@ -407,7 +384,7 @@
 </ul>
 </nav></div>
 </div>
-</div>
+</div> -->
 
 
 <div class="two-col-bar" id="two-col-bar">
@@ -1868,5 +1845,28 @@ dashboard.png
 <script src="assets/js/greedynav.js"></script>
 
 <script src="assets/js/app.js"></script>
+<script>
+  fetch('navbar.html')
+    .then(response => response.text())
+    .then(data => {
+      const navbarContainer = document.getElementById('navbarContainer');
+      navbarContainer.innerHTML = data;
+      initializeDropdowns();
+    })
+    .catch(error => console.error(error));
+
+  function initializeDropdowns() {
+    const submenuItems = document.querySelectorAll('.submenu');
+    submenuItems.forEach(item => {
+      const submenuToggle = item.querySelector('a');
+      const submenuList = item.querySelector('ul');
+
+      submenuToggle.addEventListener('click', function (e) {
+        e.preventDefault();
+        submenuList.style.display = submenuList.style.display === 'none' ? 'block' : 'none';
+      });
+    });
+  }
+</script>
 </body>
 </html>
