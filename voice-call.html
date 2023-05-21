@@ -24,6 +24,30 @@
 <link rel="stylesheet" href="assets/css/line-awesome.min.css">
 
 <link rel="stylesheet" href="assets/css/style.css">
+<script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        const navbarContainer = document.getElementById('navbarContainer');
+        navbarContainer.innerHTML = data;
+        initializeDropdowns();
+      })
+      .catch(error => console.error(error));
+  
+    function initializeDropdowns() {
+      const submenuItems = document.querySelectorAll('.submenu');
+      submenuItems.forEach(item => {
+        const submenuToggle = item.querySelector('a');
+        const submenuList = item.querySelector('ul');
+  
+        submenuToggle.addEventListener('click', function (e) {
+          e.preventDefault();
+          submenuList.style.display = submenuList.style.display === 'none' ? 'block' : 'none';
+        });
+      });
+    }
+  </script>
+   
 </head>
 <body>
 

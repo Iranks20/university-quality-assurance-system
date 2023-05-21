@@ -1948,5 +1948,29 @@ library_add_check
 <script src="assets/js/greedynav-1.js"></script>
 
 <script src="assets/js/app-1.js"></script>
+<script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        const navbarContainer = document.getElementById('navbarContainer');
+        navbarContainer.innerHTML = data;
+        initializeDropdowns();
+      })
+      .catch(error => console.error(error));
+  
+    function initializeDropdowns() {
+      const submenuItems = document.querySelectorAll('.submenu');
+      submenuItems.forEach(item => {
+        const submenuToggle = item.querySelector('a');
+        const submenuList = item.querySelector('ul');
+  
+        submenuToggle.addEventListener('click', function (e) {
+          e.preventDefault();
+          submenuList.style.display = submenuList.style.display === 'none' ? 'block' : 'none';
+        });
+      });
+    }
+  </script>
+  
 </body>
 </html>
