@@ -7,9 +7,9 @@
 <meta name="keywords" content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern, accounts, invoice, html5, responsive, CRM, Projects">
 <meta name="author" content="Dreamguys - Bootstrap Admin Template">
 <meta name="robots" content="noindex, nofollow">
-<title>Holidays - HRMS admin template</title>
+<title>Holidays - KCU Quality Assurance system</title>
 
-<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+<link rel="shortcut icon" type="image/x-icon" href="assets/img/kculogo.png">
 
 <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
@@ -30,8 +30,8 @@
 <body>
 
 <div class="main-wrapper">
-
-<div class="header">
+<div id="headerContainer"></div>
+<!-- <div class="header">
 
 <div class="header-left">
 <a href="admin-dashboard.html" class="logo">
@@ -305,7 +305,7 @@
 </div>
 </div>
 
-</div>
+</div> -->
 
 <div id="navbarContainer"></div>
 <!-- <div class="sidebar" id="sidebar">
@@ -1958,6 +1958,27 @@ library_add_check
       });
     }
   </script>
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        const headerContainer = document.getElementById('headerContainer');
+        headerContainer.innerHTML = data;
+        initializeHeaderFeatures();
+      })
+      .catch(error => console.error('Failed to load header:', error));
   
+    function initializeHeaderFeatures() {
+      const toggleBtn = document.getElementById('toggle_btn');
+      const mobileBtn = document.getElementById('mobile_btn');
+  
+      toggleBtn.addEventListener('click', function(e) {
+      });
+  
+      mobileBtn.addEventListener('click', function(e) {
+      });
+  
+    }
+  </script>
 </body>
 </html>

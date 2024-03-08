@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-sidebar-image="none">
 <head>
 <meta charset="utf-8">
@@ -7,7 +7,7 @@
 <meta name="keywords" content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern, accounts, invoice, html5, responsive, CRM, Projects">
 <meta name="author" content="Dreamguys - Bootstrap Admin Template">
 <meta name="robots" content="noindex, nofollow">
-<title>Dashboard - KCU Quality Assurance system</title>
+<title>students - KCU Quality Assurance system</title>
 
 <link rel="shortcut icon" type="image/x-icon" href="assets/img/kculogo.png">
 
@@ -23,7 +23,11 @@
 
 <link rel="stylesheet" href="assets/css/line-awesome.min.css">
 
-<link rel="stylesheet" href="assets/plugins/morris/morris.css">
+<link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css">
+
+<link rel="stylesheet" href="assets/css/select2.min.css">
+
+<link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css">
 
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -31,7 +35,6 @@
 
 <div class="main-wrapper">
 <div id="headerContainer"></div>
-
 <!-- <div class="header">
 
 <div class="header-left">
@@ -271,7 +274,7 @@
 <div class="clearfix"></div>
 <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
 </div>
-</div>
+ </div>
 </a>
 </li>
 </ul>
@@ -321,7 +324,7 @@
 <a href="#"><i class="la la-dashboard"></i> <span> Dashboard</span> <span class="menu-arrow"></span></a>
 <ul style="display: none;">
 <li><a href="admin-dashboard.html">Admin Dashboard</a></li>
-<li><a href="employee-dashboard.html">Employee Dashboard</a></li>
+<li><a href="students-dashboard.html">students Dashboard</a></li>
 </ul>
 </li>
 <li class="submenu">
@@ -344,18 +347,18 @@
 </ul>
 </li>
 <li class="menu-title">
-<span>Employees</span>
+<span>students</span>
 </li>
 <li class="submenu">
-<a href="#" class="noti-dot"><i class="la la-user"></i> <span> Employees</span> <span class="menu-arrow"></span></a>
+<a href="#" class="noti-dot"><i class="la la-user"></i> <span> students</span> <span class="menu-arrow"></span></a>
 <ul style="display: none;">
-<li><a href="employees.html">All Employees</a></li>
+<li><a href="students.html">All students</a></li>
 <li><a href="holidays.html">Holidays</a></li>
 <li><a href="leaves.html">Leaves (Admin) <span class="badge rounded-pill bg-primary float-end">1</span></a></li>
-<li><a href="leaves-employee.html">Leaves (Employee)</a></li>
+<li><a href="leaves-students.html">Leaves (students)</a></li>
 <li><a href="leave-settings.html">Leave Settings</a></li>
 <li><a href="attendance.html">Attendance (Admin)</a></li>
-<li><a href="attendance-employee.html">Attendance (Employee)</a></li>
+<li><a href="attendance-students.html">Attendance (students)</a></li>
 <li><a href="departments.html">Departments</a></li>
 <li><a href="designations.html">Designations</a></li>
 <li><a href="timesheet.html">Timesheet</a></li>
@@ -409,7 +412,7 @@
 <li class="submenu">
 <a href="#"><i class="la la-money"></i> <span> Payroll </span> <span class="menu-arrow"></span></a>
 <ul style="display: none;">
-<li><a href="salary.html"> Employee Salary </a></li>
+<li><a href="salary.html"> students Salary </a></li>
 <li><a href="salary-view.html"> Payslip </a></li>
 <li><a href="payroll-items.html"> Payroll Items </a></li>
 </ul>
@@ -426,7 +429,7 @@
 <li><a href="project-reports.html"> Project Report </a></li>
 <li><a href="task-reports.html"> Task Report </a></li>
 <li><a href="user-reports.html"> User Report </a></li>
-<li><a href="employee-reports.html"> Employee Report </a></li>
+<li><a href="students-reports.html"> students Report </a></li>
 <li><a href="payslip-reports.html"> Payslip Report </a></li>
 <li><a href="attendance-reports.html"> Attendance Report </a></li>
 <li><a href="leave-reports.html"> Leave Report </a></li>
@@ -502,7 +505,7 @@
 <li class="submenu">
 <a href="#"><i class="la la-user"></i> <span> Profile </span> <span class="menu-arrow"></span></a>
 <ul style="display: none;">
-<li><a href="profile.html"> Employee Profile </a></li>
+<li><a href="profile.html"> students Profile </a></li>
 <li><a href="client-profile.html"> Client Profile </a></li>
 </ul>
 </li>
@@ -521,7 +524,7 @@
 <ul style="display: none;">
 <li><a href="error-404.html">404 Error </a></li>
 <li><a href="error-500.html">500 Error </a></li>
-</ul>
+</ul> 
 </li>
 <li class="submenu">
 <a href="#"><i class="la la-hand-o-up"></i> <span> Subscriptions </span> <span class="menu-arrow"></span></a>
@@ -605,8 +608,8 @@
 <li class="submenu">
 <a href="#"><i class="la la-dashboard"></i> <span> Dashboard</span> <span class="menu-arrow"></span></a>
 <ul style="display: none;">
-<li><a class="active" href="admin-dashboard.html">Admin Dashboard</a></li>
-<li><a href="employee-dashboard.html">Employee Dashboard</a></li>
+<li><a href="admin-dashboard.html">Admin Dashboard</a></li>
+<li><a href="students-dashboard.html">students Dashboard</a></li>
 </ul>
 </li>
 <li class="submenu">
@@ -629,18 +632,18 @@
 </ul>
 </li>
 <li class="menu-title">
-<span>Employees</span>
+<span>students</span>
 </li>
 <li class="submenu">
-<a href="#" class="noti-dot"><i class="la la-user"></i> <span> Employees</span> <span class="menu-arrow"></span></a>
+<a href="#" class="noti-dot"><i class="la la-user"></i> <span> students</span> <span class="menu-arrow"></span></a>
 <ul style="display: none;">
-<li><a href="employees.html">All Employees</a></li>
+<li><a class="active" href="students.html">All students</a></li>
 <li><a href="holidays.html">Holidays</a></li>
 <li><a href="leaves.html">Leaves (Admin) <span class="badge rounded-pill bg-primary float-end">1</span></a></li>
-<li><a href="leaves-employee.html">Leaves (Employee)</a></li>
+<li><a href="leaves-students.html">Leaves (students)</a></li>
 <li><a href="leave-settings.html">Leave Settings</a></li>
 <li><a href="attendance.html">Attendance (Admin)</a></li>
-<li><a href="attendance-employee.html">Attendance (Employee)</a></li>
+<li><a href="attendance-students.html">Attendance (students)</a></li>
 <li><a href="departments.html">Departments</a></li>
 <li><a href="designations.html">Designations</a></li>
 <li><a href="timesheet.html">Timesheet</a></li>
@@ -691,7 +694,7 @@
 <li class="submenu">
 <a href="#"><i class="la la-money"></i> <span> Payroll </span> <span class="menu-arrow"></span></a>
 <ul style="display: none;">
-<li><a href="salary.html"> Employee Salary </a></li>
+<li><a href="salary.html"> students Salary </a></li>
 <li><a href="salary-view.html"> Payslip </a></li>
 <li><a href="payroll-items.html"> Payroll Items </a></li>
 </ul>
@@ -708,7 +711,7 @@
 <li><a href="project-reports.html"> Project Report </a></li>
 <li><a href="task-reports.html"> Task Report </a></li>
 <li><a href="user-reports.html"> User Report </a></li>
-<li><a href="employee-reports.html"> Employee Report </a></li>
+<li><a href="students-reports.html"> students Report </a></li>
 <li><a href="payslip-reports.html"> Payslip Report </a></li>
 <li><a href="attendance-reports.html"> Attendance Report </a></li>
 <li><a href="leave-reports.html"> Leave Report </a></li>
@@ -784,7 +787,7 @@
 <li class="submenu">
 <a href="#"><i class="la la-user"></i> <span> Profile </span> <span class="menu-arrow"></span></a>
 <ul style="display: none;">
-<li><a href="profile.html"> Employee Profile </a></li>
+<li><a href="profile.html"> students Profile </a></li>
 <li><a href="client-profile.html"> Client Profile </a></li>
 </ul>
 </li>
@@ -859,7 +862,7 @@
 <li class="submenu">
 <a href="javascript:void(0);"><i class="la la-share-alt"></i> <span>Multi Level</span> <span class="menu-arrow"></span></a>
 <ul style="display: none;">
- <li class="submenu">
+<li class="submenu">
 <a href="javascript:void(0);"> <span>Level 1</span> <span class="menu-arrow"></span></a>
 <ul style="display: none;">
 <li><a href="javascript:void(0);"><span>Level 2</span></a></li>
@@ -885,10 +888,10 @@
 
 
 <div class="two-col-bar" id="two-col-bar">
-<div class="sidebar sidebar-twocol" id="navbar-nav">
+<div class="sidebar sidebar-twocol">
 <div class="sidebar-left slimscroll">
 <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-<a class="nav-link active" id="v-pills-dashboard-tab" title="Dashboard" data-bs-toggle="pill" href="#v-pills-dashboard" role="tab" aria-controls="v-pills-dashboard" aria-selected="true">
+<a class="nav-link" id="v-pills-dashboard-tab" title="Dashboard" data-bs-toggle="pill" href="#v-pills-dashboard" role="tab" aria-controls="v-pills-dashboard" aria-selected="true">
 <span class="material-icons-outlined">
 home
 </span>
@@ -898,7 +901,7 @@ home
 dashboard
 </span>
 </a>
-<a class="nav-link" id="v-pills-employees-tab" title="Employees" data-bs-toggle="pill" href="#v-pills-employees" role="tab" aria-controls="v-pills-employees" aria-selected="false">
+<a class="nav-link" id="v-pills-students-tab" title="students" data-bs-toggle="pill" href="#v-pills-students" role="tab" aria-controls="v-pills-students" aria-selected="false">
 <span class="material-icons-outlined">
 people
 </span>
@@ -938,6 +941,7 @@ account_balance_wallet
 request_quote
 </span>
 </a>
+
 <a class="nav-link" id="v-pills-policies-tab" title="Policies" data-bs-toggle="pill" href="#v-pills-policies" role="tab" aria-controls="v-pills-policies" aria-selected="false">
 <span class="material-icons-outlined">
 verified_user
@@ -983,7 +987,7 @@ indeterminate_check_box
 web_asset
 </span>
 </a>
-<a class="nav-link " id="v-pills-jobs-tab" title="Jobs" data-bs-toggle="pill" href="#v-pills-jobs" role="tab" aria-controls="v-pills-jobs" aria-selected="false">
+<a class="nav-link active" id="v-pills-jobs-tab" title="Jobs" data-bs-toggle="pill" href="#v-pills-jobs" role="tab" aria-controls="v-pills-jobs" aria-selected="false">
 <span class="material-icons-outlined">
 work_outline
 </span>
@@ -999,7 +1003,7 @@ toggle_off
 </span>
 </a>
 <a class="nav-link" id="v-pills-users-tab" title="Users" data-bs-toggle="pill" href="#v-pills-users" role="tab" aria-controls="v-pills-users" aria-selected="false">
-<span class="material-icons-outlined">
+ <span class="material-icons-outlined">
 group_add
 </span>
 </a>
@@ -1062,14 +1066,14 @@ library_add_check
 </div>
 <div class="sidebar-right">
 <div class="tab-content" id="v-pills-tabContent">
-<div class="tab-pane fade show active" id="v-pills-dashboard" role="tabpanel" aria-labelledby="v-pills-dashboard-tab">
+<div class="tab-pane fade" id="v-pills-dashboard" role="tabpanel" aria-labelledby="v-pills-dashboard-tab">
 <p>Dashboard</p>
 <ul>
 <li>
-<a href="admin-dashboard.html" class="active">Admin Dashboard</a>
+<a href="admin-dashboard.html">Admin Dashboard</a>
 </li>
 <li>
-<a href="employee-dashboard.html">Employee Dashboard</a>
+<a href="students-dashboard.html">students Dashboard</a>
 </li>
 </ul>
 </div>
@@ -1081,7 +1085,7 @@ library_add_check
 </li>
 <li class="sub-menu">
 <a href="#">Calls <span class="menu-arrow"></span></a>
-<ul style="display: none;">
+ <ul style="display: none;">
 <li><a href="voice-call.html">Voice Call</a></li>
 <li><a href="video-call.html">Video Call</a></li>
 <li><a href="outgoing-call.html">Outgoing Call</a></li>
@@ -1095,25 +1099,23 @@ library_add_check
 <a href="contacts.html">Contacts</a>
 </li>
 <li>
- <a href="inbox.html">Email</a>
+<a href="inbox.html">Email</a>
 </li>
 <li>
 <a href="file-manager.html">File Manager</a>
 </li>
 </ul>
 </div>
-<div class="tab-pane fade" id="v-pills-employees" role="tabpanel" aria-labelledby="v-pills-employees-tab">
-<p>Employees</p>
+<div class="tab-pane fade" id="v-pills-students" role="tabpanel" aria-labelledby="v-pills-students-tab">
+<p>students</p>
 <ul>
-<li><a href="employees.html">All Employees</a></li>
-<li><a href="employees.html">All Students</a></li>
-<li><a href="employees.html">All Lecturers</a></li>
+<li><a href="students.html">All students</a></li>
 <li><a href="holidays.html">Holidays</a></li>
 <li><a href="leaves.html">Leaves (Admin) <span class="badge rounded-pill bg-primary float-end">1</span></a></li>
-<li><a href="leaves-employee.html">Leaves (Employee)</a></li>
+<li><a href="leaves-students.html">Leaves (students)</a></li>
 <li><a href="leave-settings.html">Leave Settings</a></li>
 <li><a href="attendance.html">Attendance (Admin)</a></li>
-<li><a href="attendance-employee.html">Attendance (Employee)</a></li>
+<li><a href="attendance-students.html">Attendance (students)</a></li>
 <li><a href="departments.html">Departments</a></li>
 <li><a href="designations.html">Designations</a></li>
 <li><a href="timesheet.html">Timesheet</a></li>
@@ -1170,7 +1172,7 @@ library_add_check
 <div class="tab-pane fade" id="v-pills-payroll" role="tabpanel" aria-labelledby="v-pills-payroll-tab">
 <p>Payroll</p>
 <ul>
-<li><a href="salary.html"> Employee Salary </a></li>
+<li><a href="salary.html"> students Salary </a></li>
 <li><a href="salary-view.html"> Payslip </a></li>
 <li><a href="payroll-items.html"> Payroll Items </a></li>
 </ul>
@@ -1190,7 +1192,7 @@ library_add_check
 <li><a href="project-reports.html"> Project Report </a></li>
 <li><a href="task-reports.html"> Task Report </a></li>
 <li><a href="user-reports.html"> User Report </a></li>
-<li><a href="employee-reports.html"> Employee Report </a></li>
+<li><a href="students-reports.html"> students Report </a></li>
 <li><a href="payslip-reports.html"> Payslip Report </a></li>
 <li><a href="attendance-reports.html"> Attendance Report </a></li>
 <li><a href="leave-reports.html"> Leave Report </a></li>
@@ -1244,7 +1246,7 @@ library_add_check
 <li><a href="assets.html"> Assets </a></li>
 </ul>
 </div>
-<div class="tab-pane fade " id="v-pills-jobs" role="tabpanel" aria-labelledby="v-pills-jobs-tab">
+<div class="tab-pane fade show active" id="v-pills-jobs" role="tabpanel" aria-labelledby="v-pills-jobs-tab">
 <p>Jobs</p>
 <ul>
 <li><a href="user-dashboard.html" class="active"> User Dasboard </a></li>
@@ -1288,7 +1290,7 @@ library_add_check
 <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
 <p>Profile</p>
 <ul>
-<li><a href="profile.html"> Employee Profile </a></li>
+<li><a href="profile.html"> students Profile </a></li>
 <li><a href="client-profile.html"> Client Profile </a></li>
 </ul>
 </div>
@@ -1355,7 +1357,7 @@ library_add_check
 <p>Change Log</p>
 <ul>
 <li><a href="#"><span>Change Log</span> <span class="badge badge-primary ms-auto">v3.4</span> </a></li>
- </ul>
+</ul>
 </div>
 <div class="tab-pane fade" id="v-pills-multilevel" role="tabpanel" aria-labelledby="v-pills-multilevel-tab">
 <p>Multi Level</p>
@@ -1381,179 +1383,928 @@ library_add_check
 </div>
 </div>
 
-
 <div class="page-wrapper">
 
 <div class="content container-fluid">
 
 <div class="page-header">
-<div class="row">
-<div class="col-sm-12">
-<h3 class="page-title">Welcome Admin!</h3>
+<div class="row align-items-center">
+<div class="col">
+<h3 class="page-title">students</h3>
 <ul class="breadcrumb">
-<li class="breadcrumb-item active">Dashboard</li>
+<li class="breadcrumb-item"><a href="admin-dashboard.html">Dashboard</a></li>
+<li class="breadcrumb-item active">students</li>
 </ul>
+</div>
+<div class="col-auto float-end ms-auto">
+<a href="#" class="btn add-btn" data-bs-toggle="modal" data-bs-target="#add_students"><i class="fa fa-plus"></i> Add students</a>
+<div class="view-icons">
+<a href="students.html" class="grid-view btn btn-link"><i class="fa fa-th"></i></a>
+<a href="students-list.html" class="list-view btn btn-link active"><i class="fa fa-bars"></i></a>
+</div>
 </div>
 </div>
 </div>
 
-<div class="row">
-<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
-<div class="card dash-widget">
-<div class="card-body">
-<span class="dash-widget-icon"><i class="fa fa-cubes"></i></span>
-<div class="dash-widget-info">
-<h3>112</h3>
-<span>Lecturers</span>
+
+<div class="row filter-row">
+<div class="col-sm-6 col-md-3">
+<div class="form-group form-focus">
+<input type="text" class="form-control floating">
+<label class="focus-label">students ID</label>
 </div>
 </div>
+<div class="col-sm-6 col-md-3">
+<div class="form-group form-focus">
+<input type="text" class="form-control floating">
+<label class="focus-label">students Name</label>
 </div>
 </div>
-<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
-<div class="card dash-widget">
-<div class="card-body">
-<span class="dash-widget-icon"><i class="fa fa-usd"></i></span>
-<div class="dash-widget-info">
-<h3>2200</h3>
-<span>Students</span>
+<div class="col-sm-6 col-md-3">
+<div class="form-group form-focus select-focus">
+<select class="select floating">
+    <option>BCFCI</option>
+    <option>MBCHB</option>
+    <option>BBA</option>
+    <option>AGRIC</option>
+</select>
+<label class="focus-label">School</label>
 </div>
 </div>
+<div class="col-sm-6 col-md-3">
+<a href="#" class="btn btn-success w-100"> Search </a>
 </div>
 </div>
-<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
-<div class="card dash-widget">
-<div class="card-body">
-<span class="dash-widget-icon"><i class="fa fa-diamond"></i></span>
-<div class="dash-widget-info">
-<h3>37</h3>
-<span>Supporting Staff</span>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
-<div class="card dash-widget">
-<div class="card-body">
-<span class="dash-widget-icon"><i class="fa fa-user"></i></span>
-<div class="dash-widget-info">
-<h3>98</h3>
-<span>None Teaching Staff</span>
-</div>
-</div>
-</div>
-</div>
-</div>
+
 <div class="row">
 <div class="col-md-12">
+<div class="table-responsive">
+<table class="table table-striped custom-table datatable">
+<thead>
+<tr>
+<th>Name</th>
+<th>students ID</th>
+<th>Email</th>
+<th>Mobile</th>
+<th class="text-nowrap">Join Date</th>
+<th>School</th>
+<th class="text-end no-sort">Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<h2 class="table-avatar">
+<a href="profile.html" class="avatar"><img alt="" src="assets/img/profiles/avatar-02.jpg"></a>
+<a href="profile.html">John Doe</a>
+</h2>
+</td>
+<td>FT-0001</td>
+<td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b4dedbdcdad0dbd1f4d1ccd5d9c4d8d19ad7dbd9">[email&#160;protected]</a></td>
+<td>9876543210</td>
+<td>1 Jan 2013</td>
+<td>
+<div class="dropdown">
+<a href="" class="btn btn-white btn-sm btn-rounded dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">BCFCI </a>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="#">Software Engineer</a>
+<a class="dropdown-item" href="#">Software Tester</a>
+<a class="dropdown-item" href="#">Frontend Developer</a>
+<a class="dropdown-item" href="#">UI/UX Developer</a>
+</div>
+</div>
+</td>
+<td class="text-end">
+<div class="dropdown dropdown-action">
+<a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+<div class="dropdown-menu dropdown-menu-right">
+<a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit_students"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+<a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_students"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+<a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_students"><i class="fa fa-trash-o m-r-5"></i>Present</a>
+<a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_students"><i class="fa fa-trash-o m-r-5"></i>Absent</a>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h2 class="table-avatar">
+<a href="profile.html" class="avatar"><img alt="" src="assets/img/profiles/avatar-09.jpg"></a>
+<a href="profile.html">Richard Miles</a>
+</h2>
+</td>
+<td>FT-0002</td>
+<td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ff8d969c979e8d9b9296939a8cbf9a879e928f939ad19c9092">[email&#160;protected]</a></td>
+<td>9876543210</td>
+<td>18 Mar 2014</td>
+<td>
+<div class="dropdown">
+<a href="" class="btn btn-white btn-sm btn-rounded dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">MBCHB </a>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="#">Software Engineer</a>
+<a class="dropdown-item" href="#">Software Tester</a>
+<a class="dropdown-item" href="#">Frontend Developer</a>
+<a class="dropdown-item" href="#">UI/UX Developer</a>
+</div>
+</div>
+</td>
+<td class="text-end">
+<div class="dropdown dropdown-action">
+<a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+<div class="dropdown-menu dropdown-menu-right">
+<a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit_students"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+<a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_students"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+<a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_students"><i class="fa fa-trash-o m-r-5"></i> Present</a>
+<a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_students"><i class="fa fa-trash-o m-r-5"></i> Absent</a>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h2 class="table-avatar">
+<a href="profile.html" class="avatar"><img alt="" src="assets/img/profiles/avatar-10.jpg"></a>
+<a href="profile.html">John Smith</a>
+</h2>
+</td>
+<td>FT-0003</td>
+<td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="bfd5d0d7d1ccd2d6cbd7ffdac7ded2cfd3da91dcd0d2">[email&#160;protected]</a></td>
+<td>9876543210</td>
+<td>1 Apr 2014</td>
+<td>
+<div class="dropdown">
+<a href="" class="btn btn-white btn-sm btn-rounded dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">MBCHB </a>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="#">Software Engineer</a>
+<a class="dropdown-item" href="#">Software Tester</a>
+<a class="dropdown-item" href="#">Frontend Developer</a>
+<a class="dropdown-item" href="#">UI/UX Developer</a>
+</div>
+</div>
+</td>
+<td class="text-end">
+<div class="dropdown dropdown-action">
+<a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+<div class="dropdown-menu dropdown-menu-right">
+<a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit_students"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+<a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_students"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+<a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_students"><i class="fa fa-trash-o m-r-5"></i> Present</a>
+<a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_students"><i class="fa fa-trash-o m-r-5"></i> Absent</a>
+
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h2 class="table-avatar">
+<a href="profile.html" class="avatar"><img alt="" src="assets/img/profiles/avatar-05.jpg"></a>
+<a href="profile.html">Mike Litorus</a>
+</h2>
+</td>
+<td>FT-0004</td>
+<td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="284541434d44415c475a5d5b684d50494558444d064b4745">[email&#160;protected]</a></td>
+<td>9876543210</td>
+<td>1 Apr 2014</td>
+<td>
+<div class="dropdown">
+<a href="" class="btn btn-white btn-sm btn-rounded dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">BBA </a>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="#">Software Engineer</a>
+<a class="dropdown-item" href="#">Software Tester</a>
+<a class="dropdown-item" href="#">Frontend Developer</a>
+<a class="dropdown-item" href="#">UI/UX Developer</a>
+</div>
+</div>
+</td>
+<td class="text-end">
+<div class="dropdown dropdown-action">
+<a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+<div class="dropdown-menu dropdown-menu-right">
+<a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit_students"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+<a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_students"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+<a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_students"><i class="fa fa-trash-o m-r-5"></i>Present</a>
+<a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_students"><i class="fa fa-trash-o m-r-5"></i>Absent</a>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h2 class="table-avatar">
+<a href="profile.html" class="avatar"><img alt="" src="assets/img/profiles/avatar-11.jpg"></a>
+<a href="profile.html">Wilmer Deluna</a>
+</h2>
+</td>
+<td>FT-0005</td>
+<td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3a4d5356575f485e5f564f545b7a5f425b574a565f14595557">[email&#160;protected]</a></td>
+<td>9876543210</td>
+<td>22 May 2014</td>
+<td>
+<div class="dropdown">
+<a href="" class="btn btn-white btn-sm btn-rounded dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">BAG </a>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="#">Software Engineer</a>
+<a class="dropdown-item" href="#">Software Tester</a>
+<a class="dropdown-item" href="#">Frontend Developer</a>
+<a class="dropdown-item" href="#">UI/UX Developer</a>
+</div>
+</div>
+</td>
+<td class="text-end">
+<div class="dropdown dropdown-action">
+<a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+<div class="dropdown-menu dropdown-menu-right">
+ <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit_students"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+<a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_students"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+<a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_students"><i class="fa fa-trash-o m-r-5"></i> Present</a>
+<a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_students"><i class="fa fa-trash-o m-r-5"></i> Absent</a>
+
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h2 class="table-avatar">
+<a href="profile.html" class="avatar"><img alt="" src="assets/img/profiles/avatar-12.jpg"></a>
+<a href="profile.html">Jeffrey Warden</a>
+</h2>
+</td>
+<td>FT-0006</td>
+<td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e9838c8f8f9b8c909e889b8d8c87a98c91888499858cc78a8684">[email&#160;protected]</a></td>
+<td>9876543210</td>
+<td>16 Jun 2013</td>
+<td>
+<div class="dropdown">
+<a href="" class="btn btn-white btn-sm btn-rounded dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">MBCHB </a>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="#">Software Engineer</a>
+<a class="dropdown-item" href="#">Software Tester</a>
+<a class="dropdown-item" href="#">Frontend Developer</a>
+<a class="dropdown-item" href="#">UI/UX Developer</a>
+</div>
+</div>
+</td>
+<td class="text-end">
+<div class="dropdown dropdown-action">
+<a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+<div class="dropdown-menu dropdown-menu-right">
+<a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit_students"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+<a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_students"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+<a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_students"><i class="fa fa-trash-o m-r-5"></i> Present</a>
+<a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_students"><i class="fa fa-trash-o m-r-5"></i> Absent</a>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h2 class="table-avatar">
+<a href="profile.html" class="avatar"><img alt="" src="assets/img/profiles/avatar-13.jpg"></a>
+<a href="profile.html">Bernardo Galaviz</a>
+</h2>
+</td>
+<td>FT-0007</td>
+<td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fc9e998e929d8e98939b9d909d8a9586bc99849d918c9099d29f9391">[email&#160;protected]</a></td>
+<td>9876543210</td>
+<td>1 Jan 2013</td>
+<td>
+<div class="dropdown">
+<a href="" class="btn btn-white btn-sm btn-rounded dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">BCFCI </a>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="#">Software Engineer</a>
+<a class="dropdown-item" href="#">Software Tester</a>
+<a class="dropdown-item" href="#">Frontend Developer</a>
+<a class="dropdown-item" href="#">UI/UX Developer</a>
+</div>
+</div>
+</td>
+<td class="text-end">
+<div class="dropdown dropdown-action">
+<a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+<div class="dropdown-menu dropdown-menu-right">
+<a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit_students"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+<a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_students"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+<a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_students"><i class="fa fa-trash-o m-r-5"></i> Present</a>
+<a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_students"><i class="fa fa-trash-o m-r-5"></i> Absent</a>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="add_students" class="modal custom-modal fade" role="dialog">
+<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">Add students</h5>
+<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body">
+<form>
 <div class="row">
-<div class="col-md-6 text-center">
-<div class="card">
-<div class="card-body">
-<h3 class="card-title">Total Attendance $ Abscence</h3>
-<div id="bar-charts"></div>
+<div class="col-sm-6">
+<div class="form-group">
+<label class="col-form-label">First Name <span class="text-danger">*</span></label>
+<input class="form-control" type="text">
+</div>
+</div>
+<div class="col-sm-6">
+<div class="form-group">
+<label class="col-form-label">Last Name</label>
+<input class="form-control" type="text">
+</div>
+</div>
+<div class="col-sm-6">
+<div class="form-group">
+<label class="col-form-label">Username <span class="text-danger">*</span></label>
+<input class="form-control" type="text">
+</div>
+</div>
+<div class="col-sm-6">
+<div class="form-group">
+<label class="col-form-label">Email <span class="text-danger">*</span></label>
+<input class="form-control" type="email">
+</div>
+</div>
+<div class="col-sm-6">
+<div class="form-group">
+<label class="col-form-label">Password</label>
+<input class="form-control" type="password">
+</div>
+</div>
+<div class="col-sm-6">
+<div class="form-group">
+<label class="col-form-label">Confirm Password</label>
+<input class="form-control" type="password">
+</div>
+</div>
+<div class="col-sm-6">
+<div class="form-group">
+<label class="col-form-label">students ID <span class="text-danger">*</span></label>
+<input type="text" class="form-control">
+</div>
+</div>
+<div class="col-sm-6">
+<div class="form-group">
+<label class="col-form-label">Joining Date <span class="text-danger">*</span></label>
+<div class="cal-icon"><input class="form-control datetimepicker" type="text"></div>
+</div>
+</div>
+<div class="col-sm-6">
+<div class="form-group">
+<label class="col-form-label">Phone </label>
+<input class="form-control" type="text">
+</div>
+</div>
+<div class="col-sm-6">
+<div class="form-group">
+<label class="col-form-label">Company</label>
+<select class="select">
+<option value="">Global Technologies</option>
+<option value="1">Delta Infotech</option>
+</select>
+</div>
+</div>
+<div class="col-md-6">
+<div class="form-group">
+<label>Department <span class="text-danger">*</span></label>
+<select class="select">
+<option>Select Department</option>
+<option>Web Development</option>
+<option>IT Management</option>
+<option>Marketing</option>
+</select>
+</div>
+</div>
+<div class="col-md-6">
+<div class="form-group">
+<label>Schools <span class="text-danger">*</span></label>
+<select class="select">
+<option>Select School</option>
+<option>BCFCI</option>
+<option>MBCHB</option>
+<option>BBA</option>
+<option>AGRIC</option>
+</select>
 </div>
 </div>
 </div>
-<div class="col-md-6 text-center">
-<div class="card">
-<div class="card-body">
-<h3 class="card-title">Curriculum Coverage $ Completedeness</h3>
-<div id="line-charts"></div>
+<div class="table-responsive m-t-15">
+<table class="table table-striped custom-table">
+<thead>
+<tr>
+<th>Module Permission</th>
+<th class="text-center">Read</th>
+<th class="text-center">Write</th>
+<th class="text-center">Create</th>
+<th class="text-center">Delete</th>
+<th class="text-center">Import</th>
+<th class="text-center">Export</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Holidays</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+</tr>
+<tr>
+<td>Leaves</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+</tr>
+<tr>
+<td>Clients</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+</tr>
+<tr>
+<td>Projects</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+</tr>
+<tr>
+<td>Tasks</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+</tr>
+<tr>
+<td>Chats</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+</tr>
+<tr>
+<td>Assets</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+</tr>
+<tr>
+<td>Timing Sheets</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="submit-section">
+<button class="btn btn-primary submit-btn">Submit</button>
+</div>
+</form>
 </div>
 </div>
 </div>
 </div>
+
+
+<div id="edit_students" class="modal custom-modal fade" role="dialog">
+<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">Edit students</h5>
+<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
 </div>
-</div>
+<div class="modal-body">
+<form>
 <div class="row">
-<div class="col-md-12">
-<div class="card-group m-b-30">
-<div class="card">
-<div class="card-body">
-<div class="d-flex justify-content-between mb-3">
-<div>
-<span class="d-block">New Employees</span>
-</div>
-<div>
-<span class="text-success">+10%</span>
+<div class="col-sm-6">
+<div class="form-group">
+<label class="col-form-label">First Name <span class="text-danger">*</span></label>
+<input class="form-control" value="John" type="text">
 </div>
 </div>
-<h3 class="mb-3">10</h3>
-<div class="progress mb-2" style="height: 5px;">
-<div class="progress-bar bg-primary" role="progressbar" style="width: 70%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-</div>
-<p class="mb-0">Overall Employees 218</p>
-</div>
-</div>
-<!-- begin -->
-<div class="card">
-  <div class="card-body">
-      <div class="d-flex justify-content-between mb-3">
-          <div>
-              <span class="d-block">Total Non-Teaching Staff</span>
-          </div>
-          <div>
-              <!-- This span will display the total number of non-teaching staff -->
-              <span class="text-primary">500</span>
-          </div>
-      </div>
-      <div class="d-flex justify-content-between mb-3">
-          <div>
-              <span class="d-block">Average Salary</span>
-          </div>
-          <div>
-              <!-- This span will display the average salary of non-teaching staff -->
-              <span class="text-success">$35,000</span>
-          </div>
-      </div>
-      <div class="progress mb-2" style="height: 5px;">
-          <div class="progress-bar bg-primary" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-      </div>
-      <p class="mb-0">Previous Month <span class="text-muted">$32,500</span></p>
-  </div>
-</div>
-<div class="card">
-  <div class="card-body">
-      <div class="d-flex justify-content-between mb-3">
-          <div>
-              <span class="d-block">Total Number of Students</span>
-          </div>
-          <div>
-              <!-- This span will display the total number of students -->
-              <span class="text-primary">10,000</span>
-          </div>
-      </div>
-      <div class="d-flex justify-content-between mb-3">
-          <div>
-              <span class="d-block">Average GPA</span>
-          </div>
-          <div>
-              <!-- This span will display the average GPA of students -->
-              <span class="text-success">3.8</span>
-          </div>
-      </div>
-      <div class="progress mb-2" style="height: 5px;">
-          <div class="progress-bar bg-primary" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-      </div>
-      <p class="mb-0">Previous Semester <span class="text-muted">3.7</span></p>
-  </div>
-</div>
-<!-- end-->
-<div class="card">
-<div class="card-body">
-<div class="d-flex justify-content-between mb-3">
-<div>
-<span class="d-block">Overall Employees</span>
-</div>
-<div>
-<span class="text-danger">25%</span>
+<div class="col-sm-6">
+<div class="form-group">
+<label class="col-form-label">Last Name</label>
+<input class="form-control" value="Doe" type="text">
 </div>
 </div>
-<h3 class="mb-3">800</h3>
-<div class="progress mb-2" style="height: 5px;">
-<div class="progress-bar bg-primary" role="progressbar" style="width: 70%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+<div class="col-sm-6">
+<div class="form-group">
+<label class="col-form-label">Username <span class="text-danger">*</span></label>
+<input class="form-control" value="johndoe" type="text">
 </div>
-<p class="mb-0">Since Start <span class="text-muted">1000</span></p>
+</div>
+<div class="col-sm-6">
+<div class="form-group">
+<label class="col-form-label">Email <span class="text-danger">*</span></label>
+<input class="form-control" value="johndoe@example.com" type="email">
+</div>
+</div>
+<div class="col-sm-6">
+<div class="form-group">
+<label class="col-form-label">Password</label>
+<input class="form-control" value="johndoe" type="password">
+</div>
+</div>
+<div class="col-sm-6">
+<div class="form-group">
+<label class="col-form-label">Confirm Password</label>
+<input class="form-control" value="johndoe" type="password">
+ </div>
+</div>
+<div class="col-sm-6">
+<div class="form-group">
+<label class="col-form-label">students ID <span class="text-danger">*</span></label>
+<input type="text" value="FT-0001" readonly="" class="form-control floating">
+</div>
+</div>
+<div class="col-sm-6">
+<div class="form-group">
+<label class="col-form-label">Joining Date <span class="text-danger">*</span></label>
+<div class="cal-icon"><input class="form-control datetimepicker" type="text"></div>
+</div>
+</div>
+<div class="col-sm-6">
+<div class="form-group">
+<label class="col-form-label">Phone </label>
+<input class="form-control" value="9876543210" type="text">
+</div>
+</div>
+<div class="col-sm-6">
+<div class="form-group">
+<label class="col-form-label">Company</label>
+<select class="select">
+<option>Global Technologies</option>
+<option>Delta Infotech</option>
+<option selected="">International Software Inc</option>
+</select>
+</div>
+</div>
+<div class="col-md-6">
+<div class="form-group">
+<label>Department <span class="text-danger">*</span></label>
+<select class="select">
+<option>Select Department</option>
+<option>Web Development</option>
+<option>IT Management</option>
+<option>Marketing</option>
+</select>
+</div>
+</div>
+<div class="col-md-6">
+<div class="form-group">
+<label>School <span class="text-danger">*</span></label>
+<select class="select">
+<option>Select School</option>
+<option>BCFCI</option>
+<option>MBCHB</option>
+<option>BBA</option>
+<option>AGRIC</option>
+</select>
+</div>
+</div>
+</div>
+<div class="table-responsive m-t-15">
+<table class="table table-striped custom-table">
+<thead>
+<tr>
+<th>Module Permission</th>
+<th class="text-center">Read</th>
+<th class="text-center">Write</th>
+<th class="text-center">Create</th>
+<th class="text-center">Delete</th>
+<th class="text-center">Import</th>
+<th class="text-center">Export</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Holidays</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+</tr>
+<tr>
+<td>Leaves</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+</tr>
+<tr>
+<td>Clients</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+</tr>
+<tr>
+<td>Projects</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+</tr>
+<tr>
+<td>Tasks</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+</tr>
+<tr>
+<td>Chats</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+</tr>
+<tr>
+<td>Assets</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+</tr>
+<tr>
+<td>Timing Sheets</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input checked="" type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+<td class="text-center">
+<input type="checkbox">
+</td>
+</tr>
+ </tbody>
+</table>
+</div>
+<div class="submit-section">
+<button class="btn btn-primary submit-btn">Save</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="modal custom-modal fade" id="delete_students" role="dialog">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-body">
+<div class="form-header">
+<h3>Delete students</h3>
+<p>Are you sure want to delete?</p>
+</div>
+<div class="modal-btn delete-action">
+<div class="row">
+<div class="col-6">
+<a href="javascript:void(0);" class="btn btn-primary continue-btn">Delete</a>
+</div>
+<div class="col-6">
+<a href="javascript:void(0);" data-bs-dismiss="modal" class="btn btn-primary cancel-btn">Cancel</a>
+</div>
 </div>
 </div>
 </div>
@@ -1625,7 +2376,7 @@ library_add_check
 <input class="form-check-input" type="radio" name="data-layout-mode" id="layout-mode-orange" value="orange">
 <label class="form-check-label  avatar-md w-100 " for="layout-mode-orange">
 <img src="assets/img/vertical.png" alt="img">
-</label>
+</label> 
 </div>
 <h5 class="fs-13 text-center mt-2">Orange</h5>
 </div>
@@ -1748,7 +2499,7 @@ library_add_check
 <div class="form-check sidebar-setting card-radio  p-0 ">
 <input class="form-check-input" type="radio" name="data-sidebar-size" id="sidebar-size-default" value="lg">
 <label class="form-check-label avatar-md w-100" for="sidebar-size-default">
- <img src="assets/img/vertical.png" alt="img">
+<img src="assets/img/vertical.png" alt="img">
 </label>
 </div>
 <h5 class="fs-13 text-center mt-2">Default</h5>
@@ -1854,6 +2605,34 @@ library_add_check
 <h5 class="fs-13 text-center mt-2">Gradient</h5>
 </div>
 </div>
+<div class="collapse d-none" id="collapseBgGradient">
+<div class="d-flex gap-2 flex-wrap img-switch p-2 px-3 bg-light rounded">
+<div class="form-check sidebar-setting card-radio">
+<input class="form-check-input" type="radio" name="data-sidebar" id="sidebar-color-gradient" value="gradient">
+<label class="form-check-label p-0 avatar-xs rounded-circle" for="sidebar-color-gradient">
+<span class="avatar-title rounded-circle bg-vertical-gradient"></span>
+</label>
+</div>
+<div class="form-check sidebar-setting card-radio">
+<input class="form-check-input" type="radio" name="data-sidebar" id="sidebar-color-gradient-2" value="gradient-2">
+<label class="form-check-label p-0 avatar-xs rounded-circle" for="sidebar-color-gradient-2">
+<span class="avatar-title rounded-circle bg-vertical-gradient-2"></span>
+</label>
+</div>
+<div class="form-check sidebar-setting card-radio">
+<input class="form-check-input" type="radio" name="data-sidebar" id="sidebar-color-gradient-3" value="gradient-3">
+<label class="form-check-label p-0 avatar-xs rounded-circle" for="sidebar-color-gradient-3">
+<span class="avatar-title rounded-circle bg-vertical-gradient-3"></span>
+</label>
+</div>
+<div class="form-check sidebar-setting card-radio">
+<input class="form-check-input" type="radio" name="data-sidebar" id="sidebar-color-gradient-4" value="gradient-4">
+<label class="form-check-label p-0 avatar-xs rounded-circle" for="sidebar-color-gradient-4">
+<span class="avatar-title rounded-circle bg-vertical-gradient-4"></span>
+</label>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -1876,62 +2655,64 @@ library_add_check
 
 <script src="assets/js/jquery.slimscroll.min.js"></script>
 
-<script src="assets/plugins/morris/morris.min.js"></script>
-<script src="assets/plugins/raphael/raphael.min.js"></script>
-<script src="assets/js/chart.js"></script>
-<script src="assets/js/greedynav.js"></script>
+<script src="assets/js/select2.min.js"></script>
+
+<script src="assets/js/moment.min.js"></script>
+<script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+
+<script src="assets/js/jquery.dataTables.min.js"></script>
+<script src="assets/js/dataTables.bootstrap4.min.js"></script>
 
 <script src="assets/js/layout.js"></script>
 <script src="assets/js/theme-settings.js"></script>
+<script src="assets/js/greedynav.js"></script>
 
 <script src="assets/js/app.js"></script>
 <script>
-  fetch('navbar.html')
-    .then(response => response.text())
-    .then(data => {
-      const navbarContainer = document.getElementById('navbarContainer');
-      navbarContainer.innerHTML = data;
-      initializeDropdowns();
-    })
-    .catch(error => console.error(error));
-
-  function initializeDropdowns() {
-    const submenuItems = document.querySelectorAll('.submenu');
-    submenuItems.forEach(item => {
-      const submenuToggle = item.querySelector('a');
-      const submenuList = item.querySelector('ul');
-
-      submenuToggle.addEventListener('click', function (e) {
-        e.preventDefault();
-        submenuList.style.display = submenuList.style.display === 'none' ? 'block' : 'none';
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        const navbarContainer = document.getElementById('navbarContainer');
+        navbarContainer.innerHTML = data;
+        initializeDropdowns();
+      })
+      .catch(error => console.error(error));
+  
+    function initializeDropdowns() {
+      const submenuItems = document.querySelectorAll('.submenu');
+      submenuItems.forEach(item => {
+        const submenuToggle = item.querySelector('a');
+        const submenuList = item.querySelector('ul');
+  
+        submenuToggle.addEventListener('click', function (e) {
+          e.preventDefault();
+          submenuList.style.display = submenuList.style.display === 'none' ? 'block' : 'none';
+        });
       });
-    });
-  }
-</script>
-<script>
-  fetch('header.html')
-    .then(response => response.text())
-    .then(data => {
-      const headerContainer = document.getElementById('headerContainer');
-      headerContainer.innerHTML = data;
-      initializeHeaderFeatures();
-    })
-    .catch(error => console.error('Failed to load header:', error));
-
-  function initializeHeaderFeatures() {
-    // Initialize any JavaScript needed for the header here, e.g., toggle button
-    const toggleBtn = document.getElementById('toggle_btn');
-    const mobileBtn = document.getElementById('mobile_btn');
-
-    toggleBtn.addEventListener('click', function(e) {
-      // Implement the toggle functionality here
-    });
-
-    mobileBtn.addEventListener('click', function(e) {
-    });
-
-  }
-</script> 
+    }
+  </script>
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        const headerContainer = document.getElementById('headerContainer');
+        headerContainer.innerHTML = data;
+        initializeHeaderFeatures();
+      })
+      .catch(error => console.error('Failed to load header:', error));
+  
+    function initializeHeaderFeatures() {
+      const toggleBtn = document.getElementById('toggle_btn');
+      const mobileBtn = document.getElementById('mobile_btn');
+  
+      toggleBtn.addEventListener('click', function(e) {
+      });
+  
+      mobileBtn.addEventListener('click', function(e) {
+      });
+  
+    }
+  </script>
   
 </body>
 </html>

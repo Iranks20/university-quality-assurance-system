@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-sidebar-image="none">
 <head>
 <meta charset="utf-8">
@@ -7,7 +7,7 @@
 <meta name="keywords" content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern, accounts, invoice, html5, responsive, CRM, Projects">
 <meta name="author" content="Dreamguys - Bootstrap Admin Template">
 <meta name="robots" content="noindex, nofollow">
-<title>Dashboard - KCU Quality Assurance system</title>
+<title>Curriculum - KCU Quality Assurance system</title>
 
 <link rel="shortcut icon" type="image/x-icon" href="assets/img/kculogo.png">
 
@@ -23,7 +23,9 @@
 
 <link rel="stylesheet" href="assets/css/line-awesome.min.css">
 
-<link rel="stylesheet" href="assets/plugins/morris/morris.css">
+<link rel="stylesheet" href="assets/css/select2.min.css">
+
+<link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css">
 
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -31,7 +33,6 @@
 
 <div class="main-wrapper">
 <div id="headerContainer"></div>
-
 <!-- <div class="header">
 
 <div class="header-left">
@@ -361,7 +362,7 @@
 <li><a href="timesheet.html">Timesheet</a></li>
 <li><a href="shift-scheduling.html">Shift & Schedule</a></li>
 <li><a href="overtime.html">Overtime</a></li>
-</ul>
+ </ul>
 </li>
 <li>
 <a href="clients.html"><i class="la la-users"></i> <span>Clients</span></a>
@@ -415,7 +416,7 @@
 </ul>
 </li>
 <li>
-<a href="policies.html"><i class="la la-file-pdf-o"></i> <span>Policies</span></a>
+<a href="Curriculum.html"><i class="la la-file-pdf-o"></i> <span>Curriculum</span></a>
 </li>
 <li class="submenu">
 <a href="#"><i class="la la-pie-chart"></i> <span> Reports </span> <span class="menu-arrow"></span></a>
@@ -537,7 +538,7 @@
 <li><a href="search.html"> Search </a></li>
 <li><a href="faq.html"> FAQ </a></li>
 <li><a href="terms.html"> Terms </a></li>
-<li><a href="privacy-policy.html"> Privacy Policy </a></li>
+<li><a href="privacy-Curriculum.html"> Privacy Curriculum </a></li>
 <li><a href="blank-page.html"> Blank Page </a></li>
 </ul>
 </li>
@@ -605,7 +606,7 @@
 <li class="submenu">
 <a href="#"><i class="la la-dashboard"></i> <span> Dashboard</span> <span class="menu-arrow"></span></a>
 <ul style="display: none;">
-<li><a class="active" href="admin-dashboard.html">Admin Dashboard</a></li>
+<li><a href="admin-dashboard.html">Admin Dashboard</a></li>
 <li><a href="employee-dashboard.html">Employee Dashboard</a></li>
 </ul>
 </li>
@@ -696,8 +697,8 @@
 <li><a href="payroll-items.html"> Payroll Items </a></li>
 </ul>
 </li>
-<li>
-<a href="policies.html"><i class="la la-file-pdf-o"></i> <span>Policies</span></a>
+<li class="active">
+<a href="Curriculum.html"><i class="la la-file-pdf-o"></i> <span>Curriculum</span></a>
 </li>
 <li class="submenu">
 <a href="#"><i class="la la-pie-chart"></i> <span> Reports </span> <span class="menu-arrow"></span></a>
@@ -767,7 +768,7 @@
 </ul>
 </li>
 <li>
-<a href="knowledgebase.html"><i class="la la-question"></i> <span>Knowledgebase</span></a>
+ <a href="knowledgebase.html"><i class="la la-question"></i> <span>Knowledgebase</span></a>
 </li>
 <li>
 <a href="activities.html"><i class="la la-bell"></i> <span>Activities</span></a>
@@ -819,7 +820,7 @@
 <li><a href="search.html"> Search </a></li>
 <li><a href="faq.html"> FAQ </a></li>
 <li><a href="terms.html"> Terms </a></li>
-<li><a href="privacy-policy.html"> Privacy Policy </a></li>
+<li><a href="privacy-Curriculum.html"> Privacy Curriculum </a></li>
 <li><a href="blank-page.html"> Blank Page </a></li>
 </ul>
 </li>
@@ -853,13 +854,13 @@
 <li>
 <a href="#"><i class="la la-file-text"></i> <span>Documentation</span></a>
 </li>
-<li>
+ <li>
 <a href="javascript:void(0);"><i class="la la-info"></i> <span>Change Log</span> <span class="badge badge-primary ms-auto">v3.4</span></a>
 </li>
 <li class="submenu">
 <a href="javascript:void(0);"><i class="la la-share-alt"></i> <span>Multi Level</span> <span class="menu-arrow"></span></a>
 <ul style="display: none;">
- <li class="submenu">
+<li class="submenu">
 <a href="javascript:void(0);"> <span>Level 1</span> <span class="menu-arrow"></span></a>
 <ul style="display: none;">
 <li><a href="javascript:void(0);"><span>Level 2</span></a></li>
@@ -885,10 +886,10 @@
 
 
 <div class="two-col-bar" id="two-col-bar">
-<div class="sidebar sidebar-twocol" id="navbar-nav">
+<div class="sidebar sidebar-twocol">
 <div class="sidebar-left slimscroll">
 <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-<a class="nav-link active" id="v-pills-dashboard-tab" title="Dashboard" data-bs-toggle="pill" href="#v-pills-dashboard" role="tab" aria-controls="v-pills-dashboard" aria-selected="true">
+<a class="nav-link" id="v-pills-dashboard-tab" title="Dashboard" data-bs-toggle="pill" href="#v-pills-dashboard" role="tab" aria-controls="v-pills-dashboard" aria-selected="true">
 <span class="material-icons-outlined">
 home
 </span>
@@ -898,47 +899,47 @@ home
 dashboard
 </span>
 </a>
-<a class="nav-link" id="v-pills-employees-tab" title="Employees" data-bs-toggle="pill" href="#v-pills-employees" role="tab" aria-controls="v-pills-employees" aria-selected="false">
+<a class="nav-link " id="v-pills-employees-tab" title="Employees" data-bs-toggle="pill" href="#v-pills-employees" role="tab" aria-controls="v-pills-employees" aria-selected="false">
 <span class="material-icons-outlined">
 people
 </span>
 </a>
-<a class="nav-link" id="v-pills-clients-tab" title="Clients" data-bs-toggle="pill" href="#v-pills-clients" role="tab" aria-controls="v-pills-clients" aria-selected="false">
+<a class="nav-link " id="v-pills-clients-tab" title="Clients" data-bs-toggle="pill" href="#v-pills-clients" role="tab" aria-controls="v-pills-clients" aria-selected="false">
 <span class="material-icons-outlined">
 person
 </span>
 </a>
-<a class="nav-link" id="v-pills-projects-tab" title="Projects" data-bs-toggle="pill" href="#v-pills-projects" role="tab" aria-controls="v-pills-projects" aria-selected="false">
+<a class="nav-link " id="v-pills-projects-tab" title="Projects" data-bs-toggle="pill" href="#v-pills-projects" role="tab" aria-controls="v-pills-projects" aria-selected="false">
 <span class="material-icons-outlined">
 topic
 </span>
 </a>
-<a class="nav-link" id="v-pills-leads-tab" title="Leads" data-bs-toggle="pill" href="#v-pills-leads" role="tab" aria-controls="v-pills-leads" aria-selected="false">
+<a class="nav-link " id="v-pills-leads-tab" title="Leads" data-bs-toggle="pill" href="#v-pills-leads" role="tab" aria-controls="v-pills-leads" aria-selected="false">
 <span class="material-icons-outlined">
 leaderboard
 </span>
 </a>
-<a class="nav-link" id="v-pills-tickets-tab" title="Tickets" data-bs-toggle="pill" href="#v-pills-tickets" role="tab" aria-controls="v-pills-tickets" aria-selected="false">
+<a class="nav-link " id="v-pills-tickets-tab" title="Tickets" data-bs-toggle="pill" href="#v-pills-tickets" role="tab" aria-controls="v-pills-tickets" aria-selected="false">
 <span class="material-icons-outlined">
 confirmation_number
 </span>
 </a>
-<a class="nav-link" id="v-pills-sales-tab" title="Sales" data-bs-toggle="pill" href="#v-pills-sales" role="tab" aria-controls="v-pills-sales" aria-selected="false">
+<a class="nav-link " id="v-pills-sales-tab" title="Sales" data-bs-toggle="pill" href="#v-pills-sales" role="tab" aria-controls="v-pills-sales" aria-selected="false">
 <span class="material-icons-outlined">
 shopping_bag
 </span>
 </a>
-<a class="nav-link" id="v-pills-accounting-tab" title="Accounting" data-bs-toggle="pill" href="#v-pills-accounting" role="tab" aria-controls="v-pills-accounting" aria-selected="false">
+<a class="nav-link " id="v-pills-accounting-tab" title="Accounting" data-bs-toggle="pill" href="#v-pills-accounting" role="tab" aria-controls="v-pills-accounting" aria-selected="false">
 <span class="material-icons-outlined">
 account_balance_wallet
 </span>
 </a>
-<a class="nav-link" id="v-pills-payroll-tab" title="Payroll" data-bs-toggle="pill" href="#v-pills-payroll" role="tab" aria-controls="v-pills-payroll" aria-selected="false">
+<a class="nav-link " id="v-pills-payroll-tab" title="Payroll" data-bs-toggle="pill" href="#v-pills-payroll" role="tab" aria-controls="v-pills-payroll" aria-selected="false">
 <span class="material-icons-outlined">
 request_quote
 </span>
 </a>
-<a class="nav-link" id="v-pills-policies-tab" title="Policies" data-bs-toggle="pill" href="#v-pills-policies" role="tab" aria-controls="v-pills-policies" aria-selected="false">
+<a class="nav-link active" id="v-pills-Curriculum-tab" title="Curriculum" data-bs-toggle="pill" href="#v-pills-Curriculum" role="tab" aria-controls="v-pills-Curriculum" aria-selected="false">
 <span class="material-icons-outlined">
 verified_user
 </span>
@@ -983,7 +984,7 @@ indeterminate_check_box
 web_asset
 </span>
 </a>
-<a class="nav-link " id="v-pills-jobs-tab" title="Jobs" data-bs-toggle="pill" href="#v-pills-jobs" role="tab" aria-controls="v-pills-jobs" aria-selected="false">
+<a class="nav-link" id="v-pills-jobs-tab" title="Jobs" data-bs-toggle="pill" href="#v-pills-jobs" role="tab" aria-controls="v-pills-jobs" aria-selected="false">
 <span class="material-icons-outlined">
 work_outline
 </span>
@@ -1062,11 +1063,11 @@ library_add_check
 </div>
 <div class="sidebar-right">
 <div class="tab-content" id="v-pills-tabContent">
-<div class="tab-pane fade show active" id="v-pills-dashboard" role="tabpanel" aria-labelledby="v-pills-dashboard-tab">
+<div class="tab-pane fade" id="v-pills-dashboard" role="tabpanel" aria-labelledby="v-pills-dashboard-tab">
 <p>Dashboard</p>
 <ul>
 <li>
-<a href="admin-dashboard.html" class="active">Admin Dashboard</a>
+<a href="admin-dashboard.html">Admin Dashboard</a>
 </li>
 <li>
 <a href="employee-dashboard.html">Employee Dashboard</a>
@@ -1095,24 +1096,22 @@ library_add_check
 <a href="contacts.html">Contacts</a>
 </li>
 <li>
- <a href="inbox.html">Email</a>
+<a href="inbox.html">Email</a>
 </li>
 <li>
 <a href="file-manager.html">File Manager</a>
 </li>
 </ul>
 </div>
-<div class="tab-pane fade" id="v-pills-employees" role="tabpanel" aria-labelledby="v-pills-employees-tab">
+<div class="tab-pane fade " id="v-pills-employees" role="tabpanel" aria-labelledby="v-pills-employees-tab">
 <p>Employees</p>
 <ul>
 <li><a href="employees.html">All Employees</a></li>
-<li><a href="employees.html">All Students</a></li>
-<li><a href="employees.html">All Lecturers</a></li>
 <li><a href="holidays.html">Holidays</a></li>
 <li><a href="leaves.html">Leaves (Admin) <span class="badge rounded-pill bg-primary float-end">1</span></a></li>
 <li><a href="leaves-employee.html">Leaves (Employee)</a></li>
 <li><a href="leave-settings.html">Leave Settings</a></li>
-<li><a href="attendance.html">Attendance (Admin)</a></li>
+<li><a href="attendance.html"> Attendance (Admin)</a></li>
 <li><a href="attendance-employee.html">Attendance (Employee)</a></li>
 <li><a href="departments.html">Departments</a></li>
 <li><a href="designations.html">Designations</a></li>
@@ -1121,13 +1120,13 @@ library_add_check
 <li><a href="overtime.html">Overtime</a></li>
 </ul>
 </div>
-<div class="tab-pane fade" id="v-pills-clients" role="tabpanel" aria-labelledby="v-pills-clients-tab">
+<div class="tab-pane fade " id="v-pills-clients" role="tabpanel" aria-labelledby="v-pills-clients-tab">
 <p>Clients</p>
 <ul>
 <li><a href="clients.html">Clients</a></li>
 </ul>
 </div>
-<div class="tab-pane fade" id="v-pills-projects" role="tabpanel" aria-labelledby="v-pills-projects-tab">
+<div class="tab-pane fade " id="v-pills-projects" role="tabpanel" aria-labelledby="v-pills-projects-tab">
 <p>Projects</p>
 <ul>
 <li><a href="projects.html">Projects</a></li>
@@ -1135,19 +1134,19 @@ library_add_check
 <li><a href="task-board.html">Task Board</a></li>
 </ul>
 </div>
-<div class="tab-pane fade" id="v-pills-leads" role="tabpanel" aria-labelledby="v-pills-leads-tab">
+<div class="tab-pane fade " id="v-pills-leads" role="tabpanel" aria-labelledby="v-pills-leads-tab">
 <p>Leads</p>
 <ul>
 <li><a href="leads.html">Leads</a></li>
 </ul>
 </div>
-<div class="tab-pane fade" id="v-pills-tickets" role="tabpanel" aria-labelledby="v-pills-tickets-tab">
+<div class="tab-pane fade " id="v-pills-tickets" role="tabpanel" aria-labelledby="v-pills-tickets-tab">
 <p>Tickets</p>
 <ul>
 <li><a href="tickets.html">Tickets</a></li>
 </ul>
 </div>
-<div class="tab-pane fade" id="v-pills-sales" role="tabpanel" aria-labelledby="v-pills-sales-tab">
+<div class="tab-pane fade " id="v-pills-sales" role="tabpanel" aria-labelledby="v-pills-sales-tab">
 <p>Sales</p>
 <ul>
 <li><a href="estimates.html">Estimates</a></li>
@@ -1158,7 +1157,7 @@ library_add_check
 <li><a href="taxes.html">Taxes</a></li>
 </ul>
 </div>
-<div class="tab-pane fade" id="v-pills-accounting" role="tabpanel" aria-labelledby="v-pills-accounting-tab">
+<div class="tab-pane fade " id="v-pills-accounting" role="tabpanel" aria-labelledby="v-pills-accounting-tab">
 <p>Accounting</p>
 <ul>
 <li><a href="categories.html">Categories</a></li>
@@ -1175,10 +1174,10 @@ library_add_check
 <li><a href="payroll-items.html"> Payroll Items </a></li>
 </ul>
 </div>
-<div class="tab-pane fade" id="v-pills-policies" role="tabpanel" aria-labelledby="v-pills-policies-tab">
-<p>Policies</p>
+<div class="tab-pane fade  show active" id="v-pills-Curriculum" role="tabpanel" aria-labelledby="v-pills-Curriculum-tab">
+<p>Curriculum</p>
 <ul>
-<li><a href="policies.html"> Policies </a></li>
+<li><a href="Curriculum.html" class="active"> Curriculum </a></li>
 </ul>
 </div>
 <div class="tab-pane fade" id="v-pills-reports" role="tabpanel" aria-labelledby="v-pills-reports-tab">
@@ -1247,7 +1246,7 @@ library_add_check
 <div class="tab-pane fade " id="v-pills-jobs" role="tabpanel" aria-labelledby="v-pills-jobs-tab">
 <p>Jobs</p>
 <ul>
-<li><a href="user-dashboard.html" class="active"> User Dasboard </a></li>
+<li><a href="user-dashboard.html"> User Dasboard </a></li>
 <li><a href="jobs-dashboard.html"> Jobs Dasboard </a></li>
 <li><a href="jobs.html"> Manage Jobs </a></li>
 <li><a href="job-applicants.html"> Applied Jobs </a></li>
@@ -1323,7 +1322,7 @@ library_add_check
 <li><a href="search.html"> Search </a></li>
 <li><a href="faq.html"> FAQ </a></li>
 <li><a href="terms.html"> Terms </a></li>
-<li><a href="privacy-policy.html"> Privacy Policy </a></li>
+<li><a href="privacy-Curriculum.html"> Privacy Curriculum </a></li>
 <li><a href="blank-page.html"> Blank Page </a></li>
 </ul>
 </div>
@@ -1355,7 +1354,7 @@ library_add_check
 <p>Change Log</p>
 <ul>
 <li><a href="#"><span>Change Log</span> <span class="badge badge-primary ms-auto">v3.4</span> </a></li>
- </ul>
+</ul>
 </div>
 <div class="tab-pane fade" id="v-pills-multilevel" role="tabpanel" aria-labelledby="v-pills-multilevel-tab">
 <p>Multi Level</p>
@@ -1387,173 +1386,177 @@ library_add_check
 <div class="content container-fluid">
 
 <div class="page-header">
-<div class="row">
-<div class="col-sm-12">
-<h3 class="page-title">Welcome Admin!</h3>
+<div class="row align-items-center">
+<div class="col">
+<h3 class="page-title">Curriculum</h3>
 <ul class="breadcrumb">
-<li class="breadcrumb-item active">Dashboard</li>
+<li class="breadcrumb-item"><a href="admin-dashboard.html">Dashboard</a></li>
+<li class="breadcrumb-item active">Curriculum</li>
 </ul>
+</div>
+<div class="col-auto float-end ms-auto">
+<a href="#" class="btn add-btn" data-bs-toggle="modal" data-bs-target="#add_Curriculum"><i class="fa fa-plus"></i> Add Curriculum</a>
 </div>
 </div>
 </div>
 
 <div class="row">
-<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
-<div class="card dash-widget">
-<div class="card-body">
-<span class="dash-widget-icon"><i class="fa fa-cubes"></i></span>
-<div class="dash-widget-info">
-<h3>112</h3>
-<span>Lecturers</span>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
-<div class="card dash-widget">
-<div class="card-body">
-<span class="dash-widget-icon"><i class="fa fa-usd"></i></span>
-<div class="dash-widget-info">
-<h3>2200</h3>
-<span>Students</span>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
-<div class="card dash-widget">
-<div class="card-body">
-<span class="dash-widget-icon"><i class="fa fa-diamond"></i></span>
-<div class="dash-widget-info">
-<h3>37</h3>
-<span>Supporting Staff</span>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
-<div class="card dash-widget">
-<div class="card-body">
-<span class="dash-widget-icon"><i class="fa fa-user"></i></span>
-<div class="dash-widget-info">
-<h3>98</h3>
-<span>None Teaching Staff</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="row">
 <div class="col-md-12">
+<div class="table-responsive">
+<table class="table table-striped custom-table mb-0 datatable">
+<thead>
+<tr>
+<th style="width: 30px;">#</th>
+<th>Curriculum Name </th>
+<th>Department </th>
+<th>Description </th>
+<th>Created </th>
+<th class="text-end">Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Human Anatomy</td>
+<td>All Departments</td>
+<td>Lorem ipsum dollar</td>
+<td>19 Feb 2019</td>
+<td class="text-end">
+<div class="dropdown dropdown-action">
+<a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+<div class="dropdown-menu dropdown-menu-right">
+<a class="dropdown-item" href="#"><i class="fa fa-download m-r-5"></i> Download</a>
+<a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit_Curriculum"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+<a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_Curriculum"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Principles of Management</td>
+<td>Marketing</td>
+<td>Lorem ipsum dollar</td>
+<td>20 Feb 2019</td>
+<td class="text-end">
+<div class="dropdown dropdown-action">
+<a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+<div class="dropdown-menu dropdown-menu-right">
+ <a class="dropdown-item" href="#"><i class="fa fa-download m-r-5"></i> Download</a>
+<a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit_Curriculum"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+<a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_Curriculum"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="add_Curriculum" class="modal custom-modal fade" role="dialog">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">Add Curriculum</h5>
+<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body">
+<form>
+<div class="form-group">
+<label>Curriculum Name <span class="text-danger">*</span></label>
+<input class="form-control" type="text">
+</div>
+<div class="form-group">
+<label>Description <span class="text-danger">*</span></label>
+<textarea class="form-control" rows="4"></textarea>
+</div>
+<div class="form-group">
+<label class="col-form-label">Department</label>
+<select class="select">
+<option>All Departments</option>
+<option>Web Development</option>
+<option>Marketing</option>
+<option>IT Management</option>
+</select>
+</div>
+<div class="form-group">
+<label>Upload Curriculum <span class="text-danger">*</span></label>
+<input type="file" class="form-control" id="Curriculum_upload">
+</div>
+<div class="submit-section">
+<button class="btn btn-primary submit-btn">Submit</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="edit_Curriculum" class="modal custom-modal fade" role="dialog">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">Edit Curriculum</h5>
+<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body">
+<form>
+<div class="form-group">
+<label>Curriculum Name <span class="text-danger">*</span></label>
+<input class="form-control" type="text" value="Human Anatomy">
+</div>
+<div class="form-group">
+<label>Description <span class="text-danger">*</span></label>
+<textarea class="form-control" rows="4"></textarea>
+</div>
+<div class="form-group">
+<label class="col-form-label">Department</label>
+<select class="select">
+<option>All Departments</option>
+<option>Web Development</option>
+<option>Marketing</option>
+<option>IT Management</option>
+</select>
+</div>
+<div class="form-group">
+<label>Upload Curriculum <span class="text-danger">*</span></label>
+<input type="file" class="form-control" id="edit_Curriculum_upload">
+</div>
+<div class="submit-section">
+<button class="btn btn-primary submit-btn">Save</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="modal custom-modal fade" id="delete_Curriculum" role="dialog">
+<div class="modal-dialog modal-dialog-centered">
+ <div class="modal-content">
+<div class="modal-body">
+<div class="form-header">
+<h3>Delete Curriculum</h3>
+<p>Are you sure want to delete?</p>
+</div>
+<div class="modal-btn delete-action">
 <div class="row">
-<div class="col-md-6 text-center">
-<div class="card">
-<div class="card-body">
-<h3 class="card-title">Total Attendance $ Abscence</h3>
-<div id="bar-charts"></div>
+<div class="col-6">
+<a href="javascript:void(0);" class="btn btn-primary continue-btn">Delete</a>
 </div>
+<div class="col-6">
+<a href="javascript:void(0);" data-bs-dismiss="modal" class="btn btn-primary cancel-btn">Cancel</a>
 </div>
-</div>
-<div class="col-md-6 text-center">
-<div class="card">
-<div class="card-body">
-<h3 class="card-title">Curriculum Coverage $ Completedeness</h3>
-<div id="line-charts"></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-md-12">
-<div class="card-group m-b-30">
-<div class="card">
-<div class="card-body">
-<div class="d-flex justify-content-between mb-3">
-<div>
-<span class="d-block">New Employees</span>
-</div>
-<div>
-<span class="text-success">+10%</span>
-</div>
-</div>
-<h3 class="mb-3">10</h3>
-<div class="progress mb-2" style="height: 5px;">
-<div class="progress-bar bg-primary" role="progressbar" style="width: 70%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-</div>
-<p class="mb-0">Overall Employees 218</p>
-</div>
-</div>
-<!-- begin -->
-<div class="card">
-  <div class="card-body">
-      <div class="d-flex justify-content-between mb-3">
-          <div>
-              <span class="d-block">Total Non-Teaching Staff</span>
-          </div>
-          <div>
-              <!-- This span will display the total number of non-teaching staff -->
-              <span class="text-primary">500</span>
-          </div>
-      </div>
-      <div class="d-flex justify-content-between mb-3">
-          <div>
-              <span class="d-block">Average Salary</span>
-          </div>
-          <div>
-              <!-- This span will display the average salary of non-teaching staff -->
-              <span class="text-success">$35,000</span>
-          </div>
-      </div>
-      <div class="progress mb-2" style="height: 5px;">
-          <div class="progress-bar bg-primary" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-      </div>
-      <p class="mb-0">Previous Month <span class="text-muted">$32,500</span></p>
-  </div>
-</div>
-<div class="card">
-  <div class="card-body">
-      <div class="d-flex justify-content-between mb-3">
-          <div>
-              <span class="d-block">Total Number of Students</span>
-          </div>
-          <div>
-              <!-- This span will display the total number of students -->
-              <span class="text-primary">10,000</span>
-          </div>
-      </div>
-      <div class="d-flex justify-content-between mb-3">
-          <div>
-              <span class="d-block">Average GPA</span>
-          </div>
-          <div>
-              <!-- This span will display the average GPA of students -->
-              <span class="text-success">3.8</span>
-          </div>
-      </div>
-      <div class="progress mb-2" style="height: 5px;">
-          <div class="progress-bar bg-primary" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-      </div>
-      <p class="mb-0">Previous Semester <span class="text-muted">3.7</span></p>
-  </div>
-</div>
-<!-- end-->
-<div class="card">
-<div class="card-body">
-<div class="d-flex justify-content-between mb-3">
-<div>
-<span class="d-block">Overall Employees</span>
-</div>
-<div>
-<span class="text-danger">25%</span>
-</div>
-</div>
-<h3 class="mb-3">800</h3>
-<div class="progress mb-2" style="height: 5px;">
-<div class="progress-bar bg-primary" role="progressbar" style="width: 70%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-</div>
-<p class="mb-0">Since Start <span class="text-muted">1000</span></p>
 </div>
 </div>
 </div>
@@ -1579,7 +1582,7 @@ library_add_check
 </div>
 </div>
 <div class="offcanvas-body p-0">
-<div data-simplebar="" class="h-100">
+<div data-simplebar class="h-100">
 <div class="settings-mains">
 <div class="layout-head">
 <h5>Layout</h5>
@@ -1721,7 +1724,7 @@ library_add_check
 <div class="row">
 <div class="col-4">
 <div class="form-check card-radio  p-0">
-<input class="form-check-input" type="radio" name="data-topbar" id="topbar-color-light" value="light">
+ <input class="form-check-input" type="radio" name="data-topbar" id="topbar-color-light" value="light">
 <label class="form-check-label avatar-md w-100" for="topbar-color-light">
 <img src="assets/img/vertical.png" alt="img">
 </label>
@@ -1748,7 +1751,7 @@ library_add_check
 <div class="form-check sidebar-setting card-radio  p-0 ">
 <input class="form-check-input" type="radio" name="data-sidebar-size" id="sidebar-size-default" value="lg">
 <label class="form-check-label avatar-md w-100" for="sidebar-size-default">
- <img src="assets/img/vertical.png" alt="img">
+<img src="assets/img/vertical.png" alt="img">
 </label>
 </div>
 <h5 class="fs-13 text-center mt-2">Default</h5>
@@ -1854,6 +1857,34 @@ library_add_check
 <h5 class="fs-13 text-center mt-2">Gradient</h5>
 </div>
 </div>
+<div class="collapse d-none" id="collapseBgGradient">
+<div class="d-flex gap-2 flex-wrap img-switch p-2 px-3 bg-light rounded">
+<div class="form-check sidebar-setting card-radio">
+<input class="form-check-input" type="radio" name="data-sidebar" id="sidebar-color-gradient" value="gradient">
+<label class="form-check-label p-0 avatar-xs rounded-circle" for="sidebar-color-gradient">
+<span class="avatar-title rounded-circle bg-vertical-gradient"></span>
+</label>
+</div>
+<div class="form-check sidebar-setting card-radio">
+<input class="form-check-input" type="radio" name="data-sidebar" id="sidebar-color-gradient-2" value="gradient-2">
+<label class="form-check-label p-0 avatar-xs rounded-circle" for="sidebar-color-gradient-2">
+<span class="avatar-title rounded-circle bg-vertical-gradient-2"></span>
+</label>
+</div>
+<div class="form-check sidebar-setting card-radio">
+<input class="form-check-input" type="radio" name="data-sidebar" id="sidebar-color-gradient-3" value="gradient-3">
+<label class="form-check-label p-0 avatar-xs rounded-circle" for="sidebar-color-gradient-3">
+<span class="avatar-title rounded-circle bg-vertical-gradient-3"></span>
+</label>
+</div>
+<div class="form-check sidebar-setting card-radio">
+<input class="form-check-input" type="radio" name="data-sidebar" id="sidebar-color-gradient-4" value="gradient-4">
+<label class="form-check-label p-0 avatar-xs rounded-circle" for="sidebar-color-gradient-4">
+<span class="avatar-title rounded-circle bg-vertical-gradient-4"></span>
+</label>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -1870,68 +1901,66 @@ library_add_check
 </div>
 </div>
 
-<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/jquery-3.6.0.min.js"></script>
 
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 
 <script src="assets/js/jquery.slimscroll.min.js"></script>
 
-<script src="assets/plugins/morris/morris.min.js"></script>
-<script src="assets/plugins/raphael/raphael.min.js"></script>
-<script src="assets/js/chart.js"></script>
-<script src="assets/js/greedynav.js"></script>
+<script src="assets/js/select2.min.js"></script>
+
+<script src="assets/js/jquery.dataTables.min.js"></script>
+<script src="assets/js/dataTables.bootstrap4.min.js"></script>
 
 <script src="assets/js/layout.js"></script>
 <script src="assets/js/theme-settings.js"></script>
+<script src="assets/js/greedynav.js"></script>
 
 <script src="assets/js/app.js"></script>
 <script>
-  fetch('navbar.html')
-    .then(response => response.text())
-    .then(data => {
-      const navbarContainer = document.getElementById('navbarContainer');
-      navbarContainer.innerHTML = data;
-      initializeDropdowns();
-    })
-    .catch(error => console.error(error));
-
-  function initializeDropdowns() {
-    const submenuItems = document.querySelectorAll('.submenu');
-    submenuItems.forEach(item => {
-      const submenuToggle = item.querySelector('a');
-      const submenuList = item.querySelector('ul');
-
-      submenuToggle.addEventListener('click', function (e) {
-        e.preventDefault();
-        submenuList.style.display = submenuList.style.display === 'none' ? 'block' : 'none';
-      });
-    });
-  }
-</script>
-<script>
-  fetch('header.html')
-    .then(response => response.text())
-    .then(data => {
-      const headerContainer = document.getElementById('headerContainer');
-      headerContainer.innerHTML = data;
-      initializeHeaderFeatures();
-    })
-    .catch(error => console.error('Failed to load header:', error));
-
-  function initializeHeaderFeatures() {
-    // Initialize any JavaScript needed for the header here, e.g., toggle button
-    const toggleBtn = document.getElementById('toggle_btn');
-    const mobileBtn = document.getElementById('mobile_btn');
-
-    toggleBtn.addEventListener('click', function(e) {
-      // Implement the toggle functionality here
-    });
-
-    mobileBtn.addEventListener('click', function(e) {
-    });
-
-  }
-</script> 
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        const navbarContainer = document.getElementById('navbarContainer');
+        navbarContainer.innerHTML = data;
+        initializeDropdowns();
+      })
+      .catch(error => console.error(error));
   
+    function initializeDropdowns() {
+      const submenuItems = document.querySelectorAll('.submenu');
+      submenuItems.forEach(item => {
+        const submenuToggle = item.querySelector('a');
+        const submenuList = item.querySelector('ul');
+  
+        submenuToggle.addEventListener('click', function (e) {
+          e.preventDefault();
+          submenuList.style.display = submenuList.style.display === 'none' ? 'block' : 'none';
+        });
+      });
+    }
+  </script>
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        const headerContainer = document.getElementById('headerContainer');
+        headerContainer.innerHTML = data;
+        initializeHeaderFeatures();
+      })
+      .catch(error => console.error('Failed to load header:', error));
+  
+    function initializeHeaderFeatures() {
+      const toggleBtn = document.getElementById('toggle_btn');
+      const mobileBtn = document.getElementById('mobile_btn');
+  
+      toggleBtn.addEventListener('click', function(e) {
+      });
+  
+      mobileBtn.addEventListener('click', function(e) {
+      });
+  
+    }
+  </script>
 </body>
 </html>
